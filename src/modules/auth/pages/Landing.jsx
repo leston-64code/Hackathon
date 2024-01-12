@@ -1,5 +1,6 @@
 import { SiNike } from "react-icons/si";
 import "./index.css"
+import Footer from "../../../layout/footer/Footer";
 
 const Landing = () => {
   return (
@@ -8,7 +9,7 @@ const Landing = () => {
 
         <nav className="w-[100%]  bg-green-30 absolute top-0 text-white text-lg flex flex-row ">
             <ul className="w-[20%] p-4 h-[100%] flex flex-row justify-center  space-x-10  align-middle">
-                 <SiNike className="text-[80px]" /> 
+                 <SiNike className="text-[80px] absolute top-0" /> 
             </ul>
             <ul className="w-[60%] p-4 h-[100%] flex flex-row  justify-center  space-x-32">
               <li>Men</li>
@@ -34,7 +35,7 @@ const Landing = () => {
       
       <p className="text-4xl ml-[2%] my-9 uppercase font-extrabold" data-aos="fade-up">Who are you shopping for ?</p>
 
-      <div className="w-[100%] h-[450px] bg-green-50 flex flex-row justify-around mb-10">
+      <div className="w-[100%] h-[450px] bg-green-0 flex flex-row justify-around mb-10">
         <div className="w-[28%] h-[100%] bg-red-40 rounded-xl">
           <img src={require("./assets/WhatsApp Image 2024-01-12 at 10.42.32_f9b8e5a2.jpg")} alt="" className="rounded-xl w-[100%] h-[100%] object-cover object-center" />
         </div>
@@ -42,10 +43,14 @@ const Landing = () => {
         <img src={require("./assets/WhatsApp Image 2024-01-12 at 10.42.32_deb09641.jpg")} alt="" className="rounded-xl w-[100%] h-[100%] object-cover object-center" />
         </div>
         <div className="w-[28%] h-[100%] bg-red-40 rounded-xl">
-        <img src={require("./assets/WhatsApp Image 2024-01-12 at 10.42.32_deb09641.jpg")} alt="" className="rounded-xl w-[100%] h-[100%] object-cover object-center" />
+        <img src={require("./assets/WhatsApp Image 2024-01-12 at 11.04.47_d22665be.jpg")} alt="" className="rounded-xl w-[100%] h-[100%] object-cover object-center" />
         </div>
         {/* <div className="w-[28%] h-[100%] bg-red-40"></div> */}
       </div>
+
+      <p className="text-4xl ml-[2%] my-9 uppercase font-extrabold" data-aos="fade-up">Trending</p>
+
+      <Footer/>
     </>
   )
 }

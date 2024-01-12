@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
+.bxcontainer{
+    @apply lg:w-[75%] m-auto md:w-[90%] w-[90%]
+}
+.foot-icons{
+    @apply text-2xl text-gray-400 hover:cursor-pointer hover:translate-y-1
+}
+.foot-links{
+    @apply md:text-4xl text-2xl  font-thin mb-5 hover:cursor-pointer hover:underline w-fit
+}
 @tailwind utilities;

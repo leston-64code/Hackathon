@@ -1,13 +1,14 @@
 // import "./style.css"
 import { Link } from "react-router-dom"
+import { SiNike } from "react-icons/si";
 
 const Login = () => {
   return (
     <>
-      <div className='w-screen flex flex-row'>
+      <div className='w-screen h-screen flex flex-row'>
 
         <div className='w-[80%] h-[100%] hidden lg:block'>
-          <img src={require("./assets/9e45184bd85ded77d52bde7875f645ba.jpg")} alt="img-here" className='w-full h-full' />
+          <img src={require("./assets/Nike-LunarGlide-6-Womens-Running-Shoe-654434_603_G_PREM.jpg")} alt="img-here" className='w-full h-full object-cover' />
         </div>
 
         <div className='w-[60%] h-[100%] bg-red-5 flex-auto'>
@@ -15,21 +16,18 @@ const Login = () => {
             <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
 
               {/* <img className="w-auto h-8 mr-2 mb-3" src={require("./assets/logo.png")} alt="logo" /> */}
+              <SiNike  className="text-[100px] text-red-600"/>
 
               <div className="w-full bg-white rounded-lg md:mt-0 sm:max-w-md xl:p-0">
                 <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
                   <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl">
                     Login
                   </h1>
-                  <p className='inline-block'>New to xeroscape.&nbsp;</p>
+                  <p className='inline-block'>New to nike.&nbsp;</p>
                   <Link to="/register" className='font-semibold text-[#1A5ACC] hover:underline inline-block'>Create an account?</Link>
 
                   <form className="space-y-4 md:space-y-6" action="#">
 
-                    {/* <div className='flex flex-row justify-between'>
-                      <button className='bg-[#F5F5F5] rounded md:p-2 w-[47%] py-2 md:w-[40%] text-[#636363] hover:shadow-md'>User login</button>
-                      <button className='bg-[#F5F5F5] rounded md:p-2 w-[47%] py-2 md:w-[40%] text-[#636363] hover:shadow-md'>Developer login</button>
-                    </div> */}
 
                     <div>
                       <input type="email" name="email" id="email" className="bg-[#F5F5F5] text-[#636363] sm:text-sm rounded block w-full p-3 outline-none hover:shadow-md input-placeholder" placeholder="Email Address" required="" />

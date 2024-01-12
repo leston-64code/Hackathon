@@ -1,13 +1,14 @@
 import React from 'react'
+import { SiNike } from 'react-icons/si'
 import {Link} from "react-router-dom"
 
 const Register = () => {
   return (
     <>
-    <div className='w-screen flex flex-row'>
+    <div className='w-screen flex flex-row h-screen'>
 
       <div className='w-[80%] h-[100%] hidden lg:block'>
-        {/* <img src={require("./assets/signupImg.jpg")} alt="img-here" className='w-full h-full' /> */}
+        <img src={require("./assets/8bebdcb336d70fb62915c2eb20a42ac7.jpg")} alt="img-here" className='w-full h-full' />
       </div>
 
       <div className='w-[60%] h-[100%] bg-red-5 flex-auto'>
@@ -15,6 +16,7 @@ const Register = () => {
           <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto  lg:py-0">
 
             {/* <img className="w-auto h-8 mr-2 mb-3 mt-5" src={require("./assets/logo.png")} alt="logo" /> */}
+            <SiNike  className="text-[100px] text-red-600"/>
 
             <div className="w-full bg-white rounded-lg md:mt-0 sm:max-w-md xl:p-0">
               <div className="p-2 md:p-6 space-y-4 md:space-y-5 sm:p-8">
@@ -30,9 +32,9 @@ const Register = () => {
                     <input type="text" name="name" id="name" className="bg-[#F5F5F5] text-[#636363] sm:text-sm rounded block w-full p-3 outline-none hover:shadow-md input-placeholder" placeholder="First name" required="" />
                   </div>
 
-                  <div>
+                  {/* <div>
                     <input type="text" name="name" id="nmae" placeholder="Last name" className="bg-[#F5F5F5] text-[#636363] sm:text-sm rounded block w-full p-3 outline-none hover:shadow-md input-placeholder" required="" />
-                  </div>
+                  </div> */}
 
                   <div>
                     <input type="email" name="email" id="email" className="bg-[#F5F5F5] text-[#636363] sm:text-sm rounded block w-full p-3 outline-none hover:shadow-md input-placeholder" placeholder="Email Address" required="" />
@@ -45,7 +47,7 @@ const Register = () => {
                   <div>
                     <input type="password" name="cpassword" id="cpassword" placeholder="Confirm Password" className="bg-[#F5F5F5] text-[#636363] sm:text-sm rounded block w-full p-3 outline-none hover:shadow-md input-placeholder" required="" />
                   </div>
-
+{/* 
                   <div className="flex items-center justify-between">
                     <div className="flex items-start">
 
@@ -59,7 +61,7 @@ const Register = () => {
 
                     </div>
 
-                  </div>
+                  </div> */}
 
                   <div className='items-center justify-center text-center'>
                     <button type="submit" className="w-[50%] m-auto text-white bg-[#1A5ACC] font-medium rounded-md text-sm px-5 py-2.5 mt-3 text-center hover:shadow-lg">SignUp</button>
