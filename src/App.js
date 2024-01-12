@@ -9,6 +9,7 @@ import Login from "./modules/auth/Login";
 import Register from "./modules/auth/Register";
 import ContactUs from "./modules/auth/pages/ContactUs";
 import Products from "./modules/auth/pages/Products";
+import OpenProducts from "./modules/auth/pages/OpenProducts";
 
 const App = () => {
 
@@ -26,6 +27,7 @@ const App = () => {
             <Route path="/contact" element={<ContactUs/>}/>
             <Route path="/cart" element={<Cart/>}/>
             <Route path="/products" element={<Products/>}/>
+            <Route path="/currentProduct" element={<OpenProducts/>}/>
           </Routes>
         </Router>
     </>
