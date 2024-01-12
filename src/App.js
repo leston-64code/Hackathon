@@ -8,11 +8,12 @@ import Cart from "./modules/auth/pages/Cart";
 import Login from "./modules/auth/Login";
 import Register from "./modules/auth/Register";
 import ContactUs from "./modules/auth/pages/ContactUs";
+import Products from "./modules/auth/pages/Products";
 
 const App = () => {
 
   useEffect(() => {
-    Aos.init({ duration: 3000 })
+    Aos.init({ duration: 1000 })
   }, [])
 
   return (
@@ -24,6 +25,7 @@ const App = () => {
             <Route path="/register" element={<Register/>}/>
             <Route path="/contact" element={<ContactUs/>}/>
             <Route path="/cart" element={<Cart/>}/>
+            <Route path="/products" element={<Products/>}/>
           </Routes>
         </Router>
     </>
